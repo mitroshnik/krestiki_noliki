@@ -1,0 +1,14 @@
+C:\Users\Ounce\source\repos\ounce\X_0\bin\Debug\netcoreapp3.1\X_0.exe
+C:\Users\Ounce\source\repos\ounce\X_0\bin\Debug\netcoreapp3.1\X_0.deps.json
+C:\Users\Ounce\source\repos\ounce\X_0\bin\Debug\netcoreapp3.1\X_0.runtimeconfig.json
+C:\Users\Ounce\source\repos\ounce\X_0\bin\Debug\netcoreapp3.1\X_0.runtimeconfig.dev.json
+C:\Users\Ounce\source\repos\ounce\X_0\bin\Debug\netcoreapp3.1\X_0.dll
+C:\Users\Ounce\source\repos\ounce\X_0\bin\Debug\netcoreapp3.1\X_0.pdb
+C:\Users\Ounce\source\repos\ounce\X_0\obj\Debug\netcoreapp3.1\X_0.csproj.AssemblyReference.cache
+C:\Users\Ounce\source\repos\ounce\X_0\obj\Debug\netcoreapp3.1\X_0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ounce\source\repos\ounce\X_0\obj\Debug\netcoreapp3.1\X_0.AssemblyInfoInputs.cache
+C:\Users\Ounce\source\repos\ounce\X_0\obj\Debug\netcoreapp3.1\X_0.AssemblyInfo.cs
+C:\Users\Ounce\source\repos\ounce\X_0\obj\Debug\netcoreapp3.1\X_0.csproj.CoreCompileInputs.cache
+C:\Users\Ounce\source\repos\ounce\X_0\obj\Debug\netcoreapp3.1\X_0.dll
+C:\Users\Ounce\source\repos\ounce\X_0\obj\Debug\netcoreapp3.1\X_0.pdb
+C:\Users\Ounce\source\repos\ounce\X_0\obj\Debug\netcoreapp3.1\X_0.genruntimeconfig.cache
