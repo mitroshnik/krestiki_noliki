@@ -10,20 +10,14 @@ namespace X_0
             var id = int.TryParse(Console.ReadLine(), out int ID);
             var vibor = ID;
             int win=ID;
+            int nichya = 0;
             if (id)
             {
                 char[] mas = new char[9] { '1','2','3','4','5','6','7','8','9' };
                 while (!proverka(mas))
                 {
                     win = ID;
-                    for (int i=0; i<9; i++)
-                    {
-                        Console.Write($"|{mas[i]}| ");
-                        if ( i == 2 || i==5 || i==8 )
-                        {
-                            Console.WriteLine("\n");
-                        }
-                    }
+                    massiv(mas);
                     Console.WriteLine($"ход игрока {ID}:");
                     var try_hod = int.TryParse(Console.ReadLine(), out int hod);
                     if (try_hod)
@@ -58,15 +52,15 @@ namespace X_0
                     {
                         ID = 1;
                     }
-                }
-                for (int i = 0; i < 9; i++)
-                {
-                    Console.Write($"|{mas[i]}| ");
-                    if (i == 2 || i == 5 || i == 8)
+                    nichya++;
+                    if (nichya == 9 && !proverka(mas))
                     {
-                        Console.WriteLine("\n");
+                        Console.WriteLine("Ничья");
+                        massiv(mas);
+                        return;
                     }
                 }
+                massiv(mas);
                 Console.WriteLine($"Победил игрок {win}");
             }
             else
@@ -74,10 +68,11 @@ namespace X_0
                 Console.WriteLine("ошибка3");
                 return;
             }
+            return;
         }
         static bool proverka(char[] m)
         {
-            for(int i=0; i<7; i++)
+            for (int i = 0; i<7; i=i+3)
             {
                 if(m[i]==m[i+1] && m[i + 1] == m[i + 2])
                 {
@@ -100,6 +95,17 @@ namespace X_0
                 }
             }
             return false;
+        }
+        static void massiv(char[] m)
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                Console.Write($"|{m[i]}| ");
+                if (i == 2 || i == 5 || i == 8)
+                {
+                    Console.WriteLine("\n");
+                }
+            }
         }
     }
 }
