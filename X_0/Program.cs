@@ -28,29 +28,26 @@ namespace X_0
                     var try_hod = int.TryParse(Console.ReadLine(), out int hod);
                     if (try_hod)
                     {
-                        for (int i = 0; i < 9; i++)
+                        if (mas[hod - 1] != 'X' && mas[hod - 1] != '0')
                         {
-                            if(mas[i]!='X' && mas[i] != '0')
+                            if (ID == vibor)
                             {
-                                if (ID == vibor)
-                                {
-                                    mas[hod - 1] = 'X';
-                                }
-                                else
-                                {
-                                    mas[hod - 1] = '0';
-                                }
+                                mas[hod - 1] = 'X';
                             }
                             else
                             {
-                                Console.WriteLine("ошибка");
-                                return;
+                                mas[hod - 1] = '0';
                             }
+                        }
+                        else
+                        {
+                            Console.WriteLine("ошибка1");
+                            return;
                         }
                     }
                     else
                     {
-                        Console.WriteLine("ошибка");
+                        Console.WriteLine("ошибка2");
                         return;
                     }
                     if (ID == 1)
@@ -74,7 +71,7 @@ namespace X_0
             }
             else
             {
-                Console.WriteLine("ошибка");
+                Console.WriteLine("ошибка3");
                 return;
             }
         }
@@ -106,4 +103,4 @@ namespace X_0
         }
     }
 }
-//привет
+//привет!
